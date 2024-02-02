@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#navArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to center content vertically */
+    padding: 0px 39%;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: rgb(0, 0, 0);
+    transition: background 0.5s;
+}
+
+section {
+    height: 500px;
+    padding: 200px 5%; /* Ridotto il padding per essere più vicino ai bordi */
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.sec1 {
+    background-image: url("img/bg/m2.jpg"); /* https://unsplash.com/it/foto/montagna-innevata-g30P1zcOzXo */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 400px 5%; /* Ridotto il padding per essere più vicino ai bordi */
+    height: 1001px;
+    font-size: 32px;
+    /*font-weight: 600;*/
+}
+
+.sec1 img {
+    height: 500px;
+    width: 750px;
+    margin-left: 50px;
+}
+
+#navArea .logo img {
+    height: 64px;
+    transition: height 0.5s;
+}
+
+#navArea ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
+
+#navArea ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    content: center;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+#navArea ul li a:hover {
+    color: #ffcc00; 
+}
+
+#navArea.is-sticky {
+    background: #000;
+}
+
+#navArea.is-sticky a {
+    color: #fff;
+}
+
+#navArea.is-sticky .logo img {
+    height: 64px;
+}
+
+section:nth-of-type(2n) {
+    background: darkcyan;
+    color: #fff;
+}
+
+section:nth-of-type(2n+1) {
+    background: white;
+    color: #333;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    font-style: italic;
+    bottom: 0; 
+}
+
+.bubble {
+    background-color: #fff;
+    border-radius: 10px;
+    min-width: 750px; 
+    min-height: 500px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-left: 150px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+.bubble ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bubble2{
+    background-color: darkcyan;
+    border-radius: 10px;
+    min-width: 750px; 
+    min-height: 500px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-right: 150px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bubble2 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 400px 5%; 
+    height: 700px;
+    font-size: 32px;
+    
+}
+
+.sec2 img {
+    height: 500px;
+    width: 750px;
+    margin-left: 50px;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 400px 5%; /* Ridotto il padding per essere più vicino ai bordi */
+    height: 600px;
+    font-size: 22px;
+    /*font-weight: 600;*/
+}
+
+.bubble3{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    min-width: 900px; 
+    min-height: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bubble3 ul{
+    list-style-type: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+button{
+    padding: 9px 25px;
+    border: none;
+    border-radius: 75px;
+    height: 50px;
+    width: 200px;
+    cursor:  pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #009fdb;
+
+}
+button:hover{
+    color: #000000;
+    background-color: #ffcc00; 
+
+}
